@@ -1,0 +1,437 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Welcome to GAZE’s documentation &mdash; GAZE 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> GAZE
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to GAZE’s documentation</a><ul>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#getting-started-with-gaze">Getting started with GAZE</a><ul>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#dependencies">Dependencies</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#input-arguments">Input arguments</a><ul>
+<li><a class="reference internal" href="#inputs">Inputs</a></li>
+<li><a class="reference internal" href="#format-for-optional-argument-3">Format for optional argument 3</a></li>
+<li><a class="reference internal" href="#format-for-optional-argument-4">Format for optional argument 4</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#hyper-parameters">Hyper-parameters</a></li>
+<li><a class="reference internal" href="#functions">Functions</a><ul>
+<li><a class="reference internal" href="#second-level-learnings">second_level_learnings</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#gaze-object">GAZE object</a></li>
+<li><a class="reference internal" href="#visualization">Visualization</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">GAZE</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Welcome to GAZE’s documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-gaze-s-documentation">
+<h1>Welcome to GAZE’s documentation<a class="headerlink" href="#welcome-to-gaze-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>GAZE is comprehensive tool to integrate multimodal high throughput data with single-cell RNA-seq measnurements to build a statistical model that is able to infer transcription factor (TF) binding activity at single cell resolution.
+To achieve this, the user requires to provide the input data either directory to GAZE or using encapsulated form of inputs generated by the <a class="reference external" href="https://stare.readthedocs.io/en/latest/Main.html#">STARE package</a>.</p>
+<div class="section" id="indices-and-tables">
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="getting-started-with-gaze">
+<h1>Getting started with GAZE<a class="headerlink" href="#getting-started-with-gaze" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Under construction</p>
+</div>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p>Under construction</p>
+</div>
+</div>
+<div class="section" id="input-arguments">
+<h1>Input arguments<a class="headerlink" href="#input-arguments" title="Permalink to this headline">¶</a></h1>
+<ul>
+<li><p>User can provide their own feature data, which means it doesn’t have to be obtained via STARE</p></li>
+<li><dl>
+<dt>When it should be created via STARE, here is the list of input arguments:</dt><dd><ul>
+<li><dl class="simple">
+<dt>bed file containing the regions (chr, start, end).</dt><dd><ul class="simple">
+<li><p>with only the above mentioned three columns a static mode of feature will be created</p></li>
+<li><p>if in addition to the reagion info one activity column is provided (bulk DNase-seq or ATAC-seq), then the epigenetic mode will be executed</p></li>
+<li><p>if multiple columns are provided after the region columns, then the single-cell epigenetic mode will be enabled in where a gene-TF affinity matrix will be created per each column (metacell)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>specify the columns in the bed file that shold be used to create the features.</p></li>
+<li><p>STARE has in total 16 arguments including those to enable the ABC-score mode and etc. Here’s an example of calling it from bash:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>./STARE.sh -g /projects/abcpp/work/base_data/GRCh37.p13.genome.fa
+-b /projects/abcpp/work/base_data/K562_10xRandomActivity.bed
+-o Test_K562_10xRandom
+-p ../PWMs/2.0/human_jaspar_hoc_kellis.PSEM
+-a /projects/abcpp/work/base_data/gencode.v38lift37.basic.annotation.gtf
+-s 5000000
+-e False
+-n 4+
+-f /projects/abcpp/work/base_data/K562_ChrWise_Contacts/
+-k 5000
+-t 0
+-c 10``
+</pre></div>
+</div>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="section" id="inputs">
+<h2>Inputs<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><ol class="arabic simple">
+<li><p>Seurat Gene expression object (fixed category annotation: cell type, subcell type (cluster) (default)</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="2">
+<li><p>Static TF object (gene x TF)</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="3">
+<li><p>(optional) Bulk epigenomic data per cell type -&gt; dynamic TF object (gene x TF x general closest cellType, eg., hepG2 and LiHe)</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="4">
+<li><p>(optional) Single cell ATAC data -&gt; create 3. and 4. Metacell TF object (TF X gene x metacell)</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="5">
+<li><p>(optional) Cell matching metadata(barcode cell, ATAC barcode, RNA barcode)</p></li>
+</ol>
+</li>
+</ul>
+</div>
+<div class="section" id="format-for-optional-argument-3">
+<h2>Format for optional argument 3<a class="headerlink" href="#format-for-optional-argument-3" title="Permalink to this headline">¶</a></h2>
+<p>peak bed files (TEPIC, gene annotation)
+metadata (cell type=file)</p>
+</div>
+<div class="section" id="format-for-optional-argument-4">
+<h2>Format for optional argument 4<a class="headerlink" href="#format-for-optional-argument-4" title="Permalink to this headline">¶</a></h2>
+<p>peak bed files per cell -&gt; summarize per metacell (TEPIC, gene annotation)
+metadata (cell type=file) the user should point to a folder where the bed files are stored. The bed files must have meaningful tags such as barcode, etc.</p>
+<ul class="simple">
+<li><ol class="arabic simple" start="5">
+<li><dl class="simple">
+<dt>matched single cell RNA and ATAC</dt><dd><p>cell metadata (barcode cell, ATAC barcode, RNA barcode)</p>
+</dd>
+</dl>
+</li>
+</ol>
+</li>
+<li><dl class="simple">
+<dt>Genome file: GeneID geneSymbol GeneLength TSS Chr Start End Strand</dt><dd><p>It is used to compute the TPM conversion and features.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="hyper-parameters">
+<h1>Hyper-parameters<a class="headerlink" href="#hyper-parameters" title="Permalink to this headline">¶</a></h1>
+<p>The hyper-parametrs for GAZE can be divided into several parts. First set of parameters are for running the triangulate functions:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">triang_opts</span> <span class="o">&lt;-</span> <span class="nb">list</span><span class="p">(</span><span class="n">file_name</span><span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="n">RNA_count</span><span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="n">ATAC_count</span><span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="n">celltype</span><span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="n">assay</span><span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="n">umap_flag</span><span class="o">=</span> <span class="n">T</span><span class="p">,</span>
+            <span class="n">expected_cells</span><span class="o">=</span> <span class="mi">30</span><span class="p">,</span>
+            <span class="n">pca_components</span><span class="o">=</span> <span class="mi">30</span><span class="p">,</span>
+            <span class="n">umap_components</span><span class="o">=</span> <span class="mi">20</span><span class="p">,</span>
+            <span class="n">conditions</span><span class="o">=</span> <span class="s2">&quot;&quot;</span>
+            <span class="p">)</span>
+</pre></div>
+</div>
+<p>Second is the set of options for the <a class="reference external" href="https://github.com/SchulzLab/MetaCellaR">MetaCellar package</a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setClass</span><span class="p">(</span><span class="s2">&quot;MetaCellaR.options&quot;</span><span class="p">,</span> <span class="n">slots</span><span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">umap_flag</span><span class="o">=</span> <span class="s2">&quot;logical&quot;</span><span class="p">,</span>
+                                   <span class="n">RNA_slot</span><span class="o">=</span> <span class="s2">&quot;character&quot;</span><span class="p">,</span>
+                                   <span class="n">ATAC_slot</span><span class="o">=</span> <span class="s2">&quot;character&quot;</span><span class="p">,</span>
+                                   <span class="n">celltype_slot</span><span class="o">=</span> <span class="s2">&quot;character&quot;</span><span class="p">,</span>
+                                   <span class="n">assay_slot</span><span class="o">=</span> <span class="s2">&quot;character&quot;</span><span class="p">,</span>
+                                   <span class="n">expected_cells</span><span class="o">=</span> <span class="s2">&quot;numeric&quot;</span><span class="p">,</span>
+                                   <span class="n">pca_components</span><span class="o">=</span> <span class="s2">&quot;numeric&quot;</span><span class="p">,</span>
+                                   <span class="n">umap_components</span><span class="o">=</span> <span class="s2">&quot;numeric&quot;</span><span class="p">,</span>
+                                   <span class="n">output_file</span><span class="o">=</span> <span class="s2">&quot;character&quot;</span><span class="p">,</span>
+                                   <span class="n">condition</span><span class="o">=</span> <span class="s2">&quot;character&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>Next are the parameters for generating the TF affinities through <cite>STARE</cite> (see the full description of their parameters <a class="reference external" href="https://stare.readthedocs.io/en/latest/Main.html#">here</a>).</p>
+<p>The parameters for the GAZE object are explained in the chapter below.
+* Learning = {both,level2}</p>
+<ul class="simple">
+<li><p>Mode = {level1, all}</p></li>
+<li><p>filter = if T use our filtering steps implemented in the triangulate pipeline, otherwise use all the genes provided in the Seurat object</p></li>
+</ul>
+</div>
+<div class="section" id="functions">
+<h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h1>
+<p>Here you can find a list of functions implemented in GAZE that will hopefully produce what you need!</p>
+<div class="section" id="second-level-learnings">
+<h2>second_level_learnings<a class="headerlink" href="#second-level-learnings" title="Permalink to this headline">¶</a></h2>
+<p>To generate the per-gene models, the function <cite>second_level_learnings</cite> from the <cite>triangulate</cite> package should be called:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>sec_res &lt;- second_level_learnings(TGL.model_m= tri_res$TGL.model,
+partition_m= tri_res$partition, ID_mapping)
+</pre></div>
+</div>
+<p>Write the function description</p>
+</div>
+</div>
+<div class="section" id="gaze-object">
+<h1>GAZE object<a class="headerlink" href="#gaze-object" title="Permalink to this headline">¶</a></h1>
+<p>Withing GAZE we create an R object that holds many different information, such as number of metacells (if computing metacells was enabled), number of genes, glmnet objects of the regression models, etc. This allows the user to access the elements in this object for their customized applications.
+But first, we need to explain <code class="docutils literal notranslate"><span class="pre">GAZE.options</span></code> class and its attributes.
+GAZE options class structure:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setClass</span><span class="p">(</span><span class="s2">&quot;GAZE.options&quot;</span><span class="p">,</span> <span class="n">slots</span><span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">TPM</span><span class="o">=</span> <span class="s2">&quot;logical&quot;</span><span class="p">,</span>
+                             <span class="n">MetacellaR</span><span class="o">=</span> <span class="s2">&quot;logical&quot;</span><span class="p">,</span>
+                             <span class="n">genome_version</span><span class="o">=</span> <span class="s2">&quot;character&quot;</span><span class="p">,</span> <span class="c1">## MUST</span>
+                             <span class="n">organism</span><span class="o">=</span> <span class="s2">&quot;character&quot;</span><span class="p">,</span> <span class="c1">## MUST</span>
+                             <span class="n">gtf_file</span><span class="o">=</span> <span class="s2">&quot;character&quot;</span><span class="p">,</span> <span class="c1">## MUST</span>
+                             <span class="n">ATAC_exists</span><span class="o">=</span> <span class="s2">&quot;logical&quot;</span><span class="p">,</span>
+                             <span class="n">filtering</span><span class="o">=</span> <span class="s2">&quot;logical&quot;</span><span class="p">,</span>
+                             <span class="n">rna_file</span><span class="o">=</span> <span class="s2">&quot;character&quot;</span><span class="p">,</span>
+                             <span class="n">atac_file</span><span class="o">=</span> <span class="s2">&quot;character&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>The <cite>genome_version</cite>, <cite>organism</cite>, and <cite>gtf_file</cite> are mandatory. The <cite>rna_file`(also mandatory) and `atac_file</cite> (optional) are the paths to the RNA and ATAC data. respectively.</p>
+<p>GAZE class structure:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setClass</span><span class="p">(</span><span class="s2">&quot;GAZE&quot;</span><span class="p">,</span> <span class="n">slots</span><span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">STARE_options</span><span class="o">=</span> <span class="s2">&quot;STARE.options&quot;</span><span class="p">,</span>
+                     <span class="n">triang_options</span><span class="o">=</span> <span class="s2">&quot;list&quot;</span><span class="p">,</span>
+                     <span class="n">gaze</span><span class="o">.</span><span class="n">options</span><span class="o">=</span> <span class="s2">&quot;GAZE.options&quot;</span><span class="p">,</span>
+                     <span class="n">seurat_file</span><span class="o">=</span> <span class="s2">&quot;character&quot;</span><span class="p">,</span>
+                     <span class="n">expr_mat</span><span class="o">=</span> <span class="s2">&quot;dgCMatrix&quot;</span><span class="p">,</span>
+                     <span class="n">metacell_mat</span><span class="o">=</span> <span class="s2">&quot;data.frame&quot;</span><span class="p">,</span>
+                     <span class="n">RNA_MC_map</span><span class="o">=</span> <span class="s2">&quot;data.frame&quot;</span><span class="p">,</span>
+                     <span class="n">condition</span><span class="o">=</span> <span class="s2">&quot;character&quot;</span><span class="p">,</span>
+                     <span class="n">celltype</span><span class="o">=</span> <span class="s2">&quot;character&quot;</span><span class="p">,</span>
+                     <span class="n">ATAC_mat</span><span class="o">=</span> <span class="s2">&quot;matrix&quot;</span><span class="p">,</span>
+                     <span class="n">ATAC_peaks</span><span class="o">=</span> <span class="s2">&quot;character&quot;</span><span class="p">,</span>
+                     <span class="n">lost_genes</span><span class="o">=</span> <span class="s2">&quot;data.frame&quot;</span><span class="p">,</span>
+                     <span class="n">lost_TFs</span><span class="o">=</span> <span class="s2">&quot;data.frame&quot;</span><span class="p">,</span>
+                     <span class="n">models</span><span class="o">=</span> <span class="s2">&quot;list&quot;</span><span class="p">,</span>
+                     <span class="n">shap_values</span><span class="o">=</span> <span class="s2">&quot;list&quot;</span><span class="p">,</span>
+                     <span class="n">ID_mapping</span><span class="o">=</span> <span class="s2">&quot;data.frame&quot;</span><span class="p">,</span>
+                     <span class="n">TF_cell_mat</span><span class="o">=</span> <span class="s2">&quot;matrix&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>After having the <cite>STARE</cite>, <cite>triangulate</cite>, and <cite>GAZE</cite> options set, you are good to go constructing the GAZE object. As shown above, it contains those three arguments for handling the general options for the individual modules of the tool, as well as arguments such as <cite>seurat_file</cite> that points to the path where the Seurat object is stored.
+Throughout the workflow, other slots will get their values. For example, if the <cite>MetaCellaR</cite> flag was enabled, the corresponding function will be run on the sc-RNA data and the aggregated cells (metacells) will be stored in the metacell_mat and the mapping of the individual cell barcodes to the metacells will be stored in RNA_MC_map.
+TODO: Have to add the description for all the in-between arguments…
+The slot <cite>models</cite> hold the glmnet models derived for each individual gene and <cite>shap_values</cite> has the SHAP values for each of these models. We also obtained a mapping of gene Ensembl IDs to gene symbols from the <cite>gtf</cite> file that the user has provided (<code class="docutils literal notranslate"><span class="pre">&#64;gaze.options&#64;gtf_file</span></code>). This mapping can be accessed from the GAZE object using the &#64; operator as follows: <code class="docutils literal notranslate"><span class="pre">&#64;ID_mapping</span></code>.</p>
+</div>
+<div class="section" id="visualization">
+<h1>Visualization<a class="headerlink" href="#visualization" title="Permalink to this headline">¶</a></h1>
+<p>A set of plots will automatically be created in the output folder provided by the user, however we have developed a ShinyApp that delivers many layers of visualization starting from exploring attributes of the data all the way to pairwise comparisons of different aspects of regulation across cell types or conditions.</p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Fatemeh Behjati.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
