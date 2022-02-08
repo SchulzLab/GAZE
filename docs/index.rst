@@ -181,7 +181,14 @@ GAZE class structure::
 
 After having the `STARE`, `triangulate`, and `GAZE` options set, you are good to go constructing the GAZE object. As shown above, it contains those three arguments for handling the general options for the individual modules of the tool, as well as arguments such as `seurat_file` that points to the path where the Seurat object is stored.
 Throughout the workflow, other slots will get their values. For example, if the `MetaCellaR` flag was enabled, the corresponding function will be run on the sc-RNA data and the aggregated cells (metacells) will be stored in the metacell_mat and the mapping of the individual cell barcodes to the metacells will be stored in RNA_MC_map.
-TODO: Have to add the description for all the in-between arguments...
+`expr_mat` is a sparse matrix that holds the gene expression for the individual cells. This is used to compare how the gene expression profile differs among the individual and aggregated (metacell) cells.
+
+There are other slots in the GAZE object that refer to the cell `condition` or `celltype`, which they normally will be inferred from the Suerat object.
+In case the ATAC data was accompanied by the RNA data, the following two slots will be updated through the construction of the GAZE object: 1) `ATAC_mat` and `ATAC_peaks`. As the name suggests, `ATAC_mat` contains a matrix of ATAC reads measured in peaks that are stored in `ATAC_peaks`.
+
+In addition, there are two other slots that are meant to keep track of missing genes or transciprtion factors (TFs): `lost_genes` and `lost_TFs`. The genes might be lost during some filtering steps that require discarding lowly expressed genes across cells or when the first level learning is enabled, the matching of training instances (genes) between gene expression data and TF binding affinities may lead to removal of some genes.
+TFs, on the other hand, can be lost when the corresponding gene (gene that has the same symbol as the TF name) is missing among the features and response variables.
+
 The slot `models` hold the glmnet models derived for each individual gene and `shap_values` has the SHAP values for each of these models. We also obtained a mapping of gene Ensembl IDs to gene symbols from the `gtf` file that the user has provided (``@gaze.options@gtf_file``). This mapping can be accessed from the GAZE object using the @ operator as follows: ``@ID_mapping``.
 
 ================================
